@@ -1,5 +1,26 @@
 # 1. Single Responsibility Principle
 
+1. **Introduction to SRP**:
+   - SRP is a guideline for building systems, stating that a class should have only one reason to change.
+   - This means each class should have a single responsibility or role.
+
+2. **Example**:
+   - The example involves creating a journal to store entries.
+   - The journal class manages entries, adding them and keeping a count.
+
+3. **Implementation**:
+   - The journal class has methods to add and remove entries.
+   - Each entry is stored in a list with a unique identifier.
+
+4. **Persistence Concern**:
+   - A separate persistence class is introduced for saving the journal to a file.
+   - This separation ensures the journal class is only responsible for managing entries, while the persistence class handles saving data.
+
+5. **Benefits of SRP**:
+   - Separating responsibilities makes the system more modular and easier to maintain.
+   - Each class focuses on a single task, leading to clearer and more manageable code.
+
+Overall, the SRP ensures that each class in a system has one specific role, which simplifies maintenance and enhances code clarity.
 ```
 namespace DotNetDesignPatternDemos.SOLID.SRP
 {
